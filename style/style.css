@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --main-font: "Bebas Neue", cursive;
+  --head-font: "Merriweather Sans", sans-serif;
+  --text-font: "Overpass", sans-serif;
+  --text-color: #4b4b4b;
+  --head-color: #da0a3d;
+  --btn-color: #d60b3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.lefthead > img {
+  width: 200px;
+}
+
+.lefthead > h1 > span {
+  border-radius: 100%;
+  background-color: var(--head-color);
+}
+#togglebutton{
+  display: none;
+}
+.righthead {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+}
+.righthead > li {
+  list-style: none;
+}
+.righthead > li > a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--text-font);
+}
+
+section {
+  width: 100%;
+  /* height: 100%; */
+  padding: 30px 50px;
+  /* background-image: url(../assets//bc.jpg);
+    background-size: cover;
+    background-position: center; */
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftsec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftsec > h1 {
+  font-size: 50px;
+  font-family: var(--head-font);
+  color: var(--text-color);
+}
+.leftsec > h1 > span {
+  color: #1e4190;
+}
+.leftsec > button {
+  margin-top: 25px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: var(--text-font);
+  color: white;
+  outline: none;
+  border: none;
+  background-color: var(--btn-color);
+  border-radius: 15px;
+}
+.leftsec > button > i {
+  margin-top: -3px;
+  margin-right: 5px;
+}
+.section1 > .rightsec {
+  width: 750px;
+  height: 450px;
+  border-radius: 25px;
+  padding: 20px;
+  background: linear-gradient(120deg, #725790, #d83b65);
+}
+.rightsec > video {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.main_tech {
+  padding: 30px 50px;
+  display: none;
+  justify-content: space-between;
+}
+.main_tech > .box {
+  width: 250px;
+  height: 100px;
+  display: flex;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.box > .leftbox {
+  width: 50%;
+  height: 100%;
+}
+.l1 {
+  background-color: #fec5a1;
+}
+.l2 {
+  background-color: #f1d4d4;
+}
+.l3 {
+  background-color: #fee9b2;
+}
+.l4 {
+  background-color: #b0defe;
+}
+.box > .rightbox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.rightbox > h4 {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 12px;
+}
+.rightbox > h4 > span {
+  font-weight: bolder;
+  font-size: 15px;
+}
+.subject {
+  padding: 30px 50px;
+}
+.section6,
+.section7,
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section6 > h1,
+.section7 > h1,
+.subject > h1 {
+  font-size: 40px;
+  font-family: var(--head-font);
+  color: var(--text-color);
+}
+.section6 > h1 > span,
+.section7 > h1 > span,
+.subject > h1 > span {
+  color: #1e4190;
+}
+.subject > h1 {
+  margin-bottom: 30px;
+}
+.section6 > p,
+.section7 > p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  font-family: var(--text-font);
+  color: var(--text-color);
+}
+.books_box,
+.state_box,
+.sub_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_box {
+  width: 100%;
+}
+.books,
+.state,
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  width: 250px;
+  height: 200px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+.books>img{
+  width: 50px;
+  margin-bottom:10px;
+}
+.sub {
+  margin-top: 0px;
+}
+.sub>img{
+  width: 50px;
+}
+.state > .simg {
+  height: 100px;
+  width: 100px;
+}
+.state > .simg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.state > h3 {
+  margin-top: 10px;
+}
+.section6,
+.section7,
+.sub > h4 {
+  font-family: var(--text-font);
+  color: #1e4091;
+  margin-top: 15px;
+}
+.subject > h4 {
+  width: 100%;
+  text-align: right;
+  margin-top: 20px;
+}
+.subject > h4 > a {
+  font-family: var(--text-font);
+  text-decoration: none;
+  color: orangered;
+  font-size: 18px;
+}
+
+.section2 > .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section2 > .top > .leftsec > h1 {
+  font-size: 40px;
+}
+.section2 > .top > .leftsec > h1 > span {
+  color: #1e4091;
+}
+.section2 > .top > .leftsec > .access {
+  display: flex;
+  margin-top: 20px;
+}
+.access > .left {
+  margin-right: 20px;
+}
+.access > .left > img {
+  width: 50px;
+}
+.access > .right > h3 {
+  font-size: 22px;
+}
+.access > .right > p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.rightsec > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2 > .bottom {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section2 > .bottom > h1 {
+  font-size: 40px;
+  color: #1e4091;
+  margin-bottom: 20px;
+}
+.section2 > .bottom > .circle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section2 > .bottom > .circle > .cir {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.section2 > .bottom > .circle > .cir > .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+}
+.section2 > .bottom > .circle > .cir > .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section2 > .bottom > .circle > .cir > p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.section2 > .bottom > button {
+  margin-top: 35px;
+  font-size: 16px;
+  padding: 10px 15px;
+  background-color: var(--btn-color);
+  border-radius: 15px;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.section3,
+.section4,
+.section5,
+.section8,
+.section9 {
+  display: none;
+} 
